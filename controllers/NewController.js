@@ -1,6 +1,6 @@
 module.exports = {
     get: (req, res) => {
-        res.render("index", {
+        res.render("new", {
             title: "Mini Message Board",
             messages: [
               { user: "Amando", text: "Hi there!", added: new Date() },
