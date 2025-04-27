@@ -6,7 +6,7 @@ module.exports = {
     },
 
     post: (req, res) => {
-        messages.push({ text: messageText, user: messageUser, added: new Date() });
+        messages.push({ text: req.body.text, user: req.body.user, added: new Date() });
         res.redirect("/");
     }
 };
