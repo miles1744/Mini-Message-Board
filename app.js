@@ -6,11 +6,10 @@ app.set("view engine", "ejs");
 
 
 
-const indexRoute = require("./routes/Index.js");
-const newRoute = require("./routes/New.js")
+const indexRoute = require("./routes/index.js");
+const newRoute = require("./routes/new.js")
 
 
-app.use("/new", newRoute)
 app.use("/", indexRoute)
 
 app.listen(3000, () => {

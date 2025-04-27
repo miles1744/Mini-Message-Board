@@ -8,7 +8,7 @@
 <body>
     <h1><%= title %></h1>
         <% messages.forEach(msg => { %>
-            <p> <%= msg.user %> </p>
+            <h2> <%= msg.user %> </h2>
             <p> <%= msg.text %> </p>
             <p> <%= msg.added.toLocaleString() %></p>
        <% }) %>
