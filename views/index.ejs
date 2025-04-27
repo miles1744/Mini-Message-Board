@@ -11,6 +11,14 @@
             <h3> <%= msg.user %> </h3>
             <p> <%= msg.text %> </p>
             <p> <%= msg.added.toLocaleString() %></p>
+            <a href="/<%= msg.id %>">
+                <button type="button">Open</button>
+              </a>
        <% }) %>
+    <a href="/new" style="
+        display: block;
+        margin-top: 20px;">
+        <button>Create a post</button>
+    </a>
 </body>
 </html>

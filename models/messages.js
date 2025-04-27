@@ -1,6 +1,6 @@
 const messages = [
-    { user: "Amando", text: "Hi there!", added: new Date() },
-    { user: "Charles", text: "Hello world!", added: new Date() }
+    { id: 1, user: "Amando", text: "Hi there!", added: new Date() },
+    { id: 2, user: "Charles", text: "Hello world!", added: new Date() }
   ];
   
   module.exports = messages;

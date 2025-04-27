@@ -6,7 +6,11 @@ module.exports = {
     },
 
     post: (req, res) => {
-        messages.push({ text: req.body.text, user: req.body.user, added: new Date() });
+
+        const lastMessage = messages[messages.length - 1];
+        const newId = lastMessage ? lastMessage.id + 1 : 1;
+
+        messages.push({ id:newId, text: req.body.text, user: req.body.user, added: new Date() });
         res.redirect("/");
     }
 };
