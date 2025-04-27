@@ -7,5 +7,6 @@ module.exports = {
 
     post: (req, res) => {
         messages.push({ text: messageText, user: messageUser, added: new Date() });
+        res.redirect("/");
     }
 };
