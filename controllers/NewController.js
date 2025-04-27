@@ -4,6 +4,6 @@ module.exports = {
     },
 
     post: (req, res) => {
-        console.log(req.body)
+        messages.push({ text: messageText, user: messageUser, added: new Date() });
     }
 };
