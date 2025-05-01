@@ -6,7 +6,7 @@ app.set("view engine", "ejs");
 
 app.use(express.urlencoded({ extended: true }));
 
-const indexRoute = require("./routes/Index.js");
+const indexRoute = require("./routes/index.js");
 const newRoute = require("./routes/new.js");
 
 app.use("/new", newRoute);
