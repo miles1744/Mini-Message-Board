@@ -1,4 +1,4 @@
-const messages = require("../models/messages.js")
+const messages = require("../db/messages.js")
 
 module.exports = {
     get: (req, res) => {
