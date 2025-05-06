@@ -11,14 +11,14 @@ const pool = new Pool({
 const createTableQuery = `
   CREATE TABLE IF NOT EXISTS messages (
     id SERIAL PRIMARY KEY,
-    user TEXT NOT NULL,
+    username TEXT NOT NULL,
     text TEXT NOT NULL,
     added TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   );
 `;
 
 const insertSampleDataQuery = `
-  INSERT INTO messages (user, text)
+  INSERT INTO messages (username, text)
   VALUES 
     ('Amando', 'Hi there!'),
     ('Charles', 'Hello World!');
