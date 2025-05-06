@@ -1,8 +1,5 @@
 const db = require("../db/messages.js")
 
-getMessageById
-insertMessage
-
 module.exports = {
     get: (req, res) => {
         res.render("new");
