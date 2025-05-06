@@ -1,4 +1,7 @@
-const messages = require("../db/messages.js")
+const db = require("../db/messages.js")
+
+getMessageById
+insertMessage
 
 module.exports = {
     get: (req, res) => {
@@ -6,11 +9,7 @@ module.exports = {
     },
 
     post: (req, res) => {
-
-        const lastMessage = messages[messages.length - 1];
-        const newId = lastMessage ? lastMessage.id + 1 : 1;
-
-        messages.push({ id:newId, text: req.body.text, user: req.body.user, added: new Date() });
+        db.insertMessage(req.body.text, req.body.user);
         res.redirect("/");
     }
 };
